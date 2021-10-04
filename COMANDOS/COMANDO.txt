@@ -1,0 +1,49 @@
+configuracion inicial
+
+$git config [--options] user.name = "Cristian"
+$git config [--options] user.email = "crisstianro25@gmail.com"
+$git config [--options] core.editor  "code --wait"
+--options:
+
+system 
+global
+local
+
+Para cambiar nombre
+
+$ git config [--options] user.name "JUAN" --replace-all
+
+Para ver todas las propiedades configuradas
+
+$ git config --global --list
+
+INICIALIZAR REPOSITORIO (EN MI MAQUINA LOCAL)
+existen 2 formas de comenzar a trabajar en un proyecto GIT.
+
+1) a partir de un proyecto que ya existe en un gestor remoto ( GitHub, GitLab) 
+o si tenemos la carpeta local y queremos que se combierta en un repositorio Git
+
+CASO 1: A partir de repositorio en algun gestor remoto( GitHub, GitLab) --> "CLONAR"	
+
+$ mkdir ejemplo
+$ cd ejemeplo
+$ git clone https://github.com/achael/eht-imaging.git // la url que quieran tomar desde github
+
+Al clonar se descarga toda la informacion, dentro se crea una carpeta .git que cintiene 
+los archivos necesarios para hacer todo el seguimiento de cambios.
+
+CASO 2: Ya existe una carpeta en mi maquina local
+
+$ mkdir ejemplo
+$ cd ejemplo
+$ git init
+
+
+Area de Stagin (preparacion)
+
+$ git add index.html // agrego un archivo individual
+$ git add .          // agrego todos los archivos
+
+
+
+ 
